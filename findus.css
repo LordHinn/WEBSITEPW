@@ -1,0 +1,79 @@
+/**/
+
+/* Resetting styles to ensure content fits iframe */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Ensure all elements inside the iframe are responsive */
+* {
+    box-sizing: inherit;
+}
+
+/* Find Us Section Styling */
+#findus {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url(R.jpg);
+    background-size: cover;
+}
+
+#findus .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#findus h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.location-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.address {
+    font-size: 18px;
+    color: #555;
+    max-width: 45%;
+}
+
+.address p {
+    margin: 5px 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #findus h2 {
+        font-size: 28px;
+    }
+
+    .location-content {
+        flex-direction: column;
+    }
+
+    .address {
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

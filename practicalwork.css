@@ -1,0 +1,13 @@
+
+/* div sction  */
+.work {
+    background-color: rgb(14, 161, 219);
+    color: green;
+}
+.work button {
+    border-radius: 10px;
+}
+
+.work button.btn:hover {
+    background-color: yellow;
+}
